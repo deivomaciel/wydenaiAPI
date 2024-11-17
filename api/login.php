@@ -5,7 +5,7 @@ header("Access-Control-Allow-Methods: POST, GET, OPTIONS");
 header("Access-Control-Allow-Headers: Content-Type, Authorization");
 
 // Conectando ao banco de dados
-require_once __DIR__ . '/../vendor/autoload.php';  // Caminho absoluto baseado na localização do script
+require_once __DIR__ . '/../vendor/vlucas/autoload.php';  // Caminho absoluto baseado na localização do script
 
 
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
