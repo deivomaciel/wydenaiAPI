@@ -16,10 +16,10 @@ header("Access-Control-Allow-Headers: Content-Type, Authorization");
 // $username = $_ENV['DB_USER'];
 // $password = $_ENV['DB_PASSWORD'];
 
-$host = getenv['DB_HOST'];
-$dbname = getenv['DB_NAME'];
-$username = getenv['DB_USER'];
-$password = getenv['DB_PASSWORD'];
+$host = getenv('DB_HOST');
+$dbname = getenv('DB_NAME');
+$username = getenv('DB_USER');
+$password = getenv('DB_PASSWORD');
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
